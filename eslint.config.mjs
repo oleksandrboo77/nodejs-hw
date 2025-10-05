@@ -12,6 +12,7 @@ export default defineConfig([
       semi: 'error',
       'no-unused-vars': ['error', { args: 'none' }],
       'no-undef': 'error',
+      'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
     },
   },
 ]);
