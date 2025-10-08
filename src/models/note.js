@@ -10,12 +10,13 @@ const noteSchema = new Schema(
     },
     content: {
       type: String,
-      required: true,
+      required: false,
       trim: true,
+      default: '',
     },
     tag: {
       type: String,
-      required: true,
+      required: false,
       enum: [
         'Work',
         'Personal',
@@ -28,6 +29,7 @@ const noteSchema = new Schema(
         'Important',
         'Todo',
       ],
+      default: 'Todo',
     },
   },
   {
